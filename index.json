@@ -1,0 +1,39 @@
+{
+	"navigation":{
+		"text1":"喵，欢迎来到天猫",
+		"text2":"请登录",
+		"text3":"免费注册",
+		"text4":"我的淘宝",
+		"text5":"我关注的品牌",
+		"text6":"购物车",
+		"text7":"收藏夹",
+		"text8":"手机版",
+		"text9":"淘宝网",
+		"text10":"企业购",
+		"text11":"商家支持",
+		"text12":"网站导航"
+	},
+	"search":{
+		"img":"img/img1.png",
+		"text":[
+			{"item":"t恤男"},
+			{"item":"连衣裙"},
+			{"item":"夏凉被"},
+			{"item":"电动牙刷"},
+			{"item":"客厅灯"},
+			{"item":"防晒衣"},
+			{"item":"凉鞋"},
+			{"item":"双肩包"},
+			{"item":"口红"}
+		]
+	},
+	"footer1":{
+		"img":[
+			{"url":"img/footer1-img1.png"},
+			{"url":"img/footer1-img2.png"},
+			{"url":"img/footer1-img3.png"},
+			{"url":"img/footer1-img4.png"}
+		]
+
+	}
+}
