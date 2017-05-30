@@ -27,6 +27,7 @@
 
 <script type="text/x-jsrender" id="navTmpl">
 <nav>
+<div>
 	{{for left}}
 	<span><a href="#">{{:text}}</a></span>
 	{{/for}}
@@ -34,13 +35,16 @@
 	{{for right}}
 	<span class="float-right"><a href="#">{{:text}}</a></span>
 	{{/for}}
+</div>
 </nav>
+
 </script>
 
 <script type="text/x-jsrender" id="searchTmpl">
-<div id="ui-search" class="row">
+<div id="ui-search">
+<div class="content-center" id="ui-search-content">
 	<img src="{{:img}}">
-	<div class="col-md-offset-3 col-md-6 col-xs-6 col-xs-offset-4">
+	<div id="ui-search-content-item">
 		<div id="ui-search-top">
 			<input type="text" placeholder="{{:placeholder}}" />
 			<div id="ui-search-top-button">搜 索</div>
@@ -48,9 +52,10 @@
 		{{for text}}
 		<div id="ui-search-buttom">
 			{{:item}}
-		</div>|
+		</div>
 		{{/for}}
 	</div>
+</div>
 </div>
 </script>
 
@@ -118,7 +123,20 @@
 <script type="text/x-jsrender" id="mainNavTmpl">
 <div class="ui-mainnav">
 <div class="ui-mainnav-bar">
-	
+	<div class="content-center">
+		<div class="ui-mainnav-bar-item1">
+			<span class="glyphicon glyphicon-align-justify"></span>
+			<span>商品分类</span>
+		</div>
+		<div class="ui-mainnav-bar-item2">
+			<span class="glyphicon glyphicon-home"></span>
+			<span>天猫超市</span>
+		</div>
+		<div class="ui-mainnav-bar-item2">
+			<span class="glyphicon glyphicon-home"></span>
+			<span>天猫超市</span>
+		</div>
+	</div>
 </div>
 <div class="ui-mainnav-img">
 	

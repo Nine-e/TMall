@@ -1,5 +1,6 @@
 @tmallRed:#ff0036;
 @tmallFont:"Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+@tmallWidth:1230px;
 @screen-xs:0;
 @screen-sm:0;
 .container{
@@ -11,6 +12,11 @@
 .float-right{
 	float: right;
 }
+.content-center{
+	width: @tmallWidth;
+	height: 100%;
+	margin: auto;
+}
 body{
 	//background-color: @tamllRed;
 	padding: 0;
@@ -19,12 +25,15 @@ body{
 nav{
 	background-color: #f2f2f2;
 	height: 32px;
-	padding-left: 3%;
-	padding-right: 3%;
 	color: #999;
 	font-size: 10px;
 	font-family: @tmallFont;
 	line-height: 32px;
+	/* text-align: center; */
+	div{
+		width: @tmallWidth;
+		margin: auto;
+	}
 	span{
 		padding-right: 10px;
 		padding-left: 10px;
@@ -45,21 +54,31 @@ nav{
 }
 
 #ui-search{
-	height: 130px;
+	/* height: 130px; */
 	font-family: arial;
+	text-align: center;
+
+	#ui-search-content{
+		height: 130px;
+		text-align: center;
+	}
+
 	img{
 		width: 240px;
 		height: 130px;
 		margin: 1px 25px 1px 25px;
-		position: absolute;
-		left: 0;
-		top: 32px;
+		float: left;
+	}
+	#ui-search-content-item{
+		width: 630px;
+		margin: auto;
+		height: 130px;
+		padding-top: 35px;
 	}
 	#ui-search-top{
 		width: 100%;
 		border: 2px solid @tmallRed;
 		height: 40px;
-		margin-top: 35px;
 		#ui-search-top-button{
 			display: inline-block;
 			float: right;
@@ -75,6 +94,7 @@ nav{
 	}
 	#ui-search-buttom{
 			display: inline-block;
+			float: left;
 			padding: 0 12px;
 			margin-top: 5px;
 			height: 18px;
@@ -192,4 +212,38 @@ nav{
 .ui-mainnav-bar{
 	background-color: #ff0036;
 	height:36px;
+	text-align: center;
+	color: #fff;
+	font-family: @tmallFont;
+}
+.ui-mainnav-bar-item1{
+	float: left;
+	display: inline-block;
+	width: 200px;
+	height: 36px;
+	background-color: #e22127;
+	/* margin-left:40px; */
+	margin-left: -250px;
+	color: #fff;
+	font-family: @tmallFont;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 15px;
+	span{
+		float: left;
+		line-height: 36px;
+		margin-left: 5px;
+	} 
+}
+.ui-mainnav-bar-item2{
+	display: inline-block;
+	box-sizing: content-box;
+	float: left;
+	line-height: 36px;
+	width: 90px;
+	height: 36px;
+	padding: 0 15px;
+	font-size: 16px;
+	font-weight: 500;
+
 }
