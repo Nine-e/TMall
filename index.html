@@ -27,19 +27,13 @@
 
 <script type="text/x-jsrender" id="navTmpl">
 <nav>
-	<span>{{:text1}}</span>
-	<span><a href="#">{{:text2}}</a></span>
-	<span><a href="#">{{:text3}}</a></span>
+	{{for left}}
+	<span><a href="#">{{:text}}</a></span>
+	{{/for}}
 
-	<span class="float-right"><a href="#">{{:text4}}</a></span>
-	<span class="float-right"><a href="#">{{:text5}}</a></span>
-	<span class="float-right"><a href="#">{{:text6}}</a></span>
-	<span class="float-right"><a href="#">{{:text7}}</a></span>
-	<span class="float-right"><a href="#">{{:text8}}</a></span>
-	<span class="float-right"><a href="#">{{:text9}}</a></span>
-	<span class="float-right"><a href="#">{{:text10}}</a></span>
-	<span class="float-right"><a href="#">{{:text11}}</a></span>
-	<span class="float-right"><a href="#">{{:text12}}</a></span>
+	{{for right}}
+	<span class="float-right"><a href="#">{{:text}}</a></span>
+	{{/for}}
 </nav>
 </script>
 
@@ -62,12 +56,72 @@
 
 <script type="text/x-jsrender" id="footerTmplOne">
 	<div id="ui-footer1">
-		
 		<div id="ui-footer1-top">
 		{{for img}}
 			<img src="{{:url}}">
 		{{/for}}
 		</div>
+
+		<div id="ui-footer1-buttom">
+			<div class="ui-footer1-buttom-item">
+				<span>{{:title1}}</span><br>
+				{{for a1}}
+				<a href="#">{{:text}}</a><br>
+				{{/for}}
+				<img src="img/footer1-img.jpg" id="footer1-img">	
+			</div>
+		{{for items}}
+			<div class="ui-footer1-buttom-item">
+				<span>{{:title}}</span><br>
+				{{for a}}
+				<a href="#">{{:text}}</a><br>
+				{{/for}}
+			</div>
+		{{/for}}
+			<div class="ui-footer1-buttom-item">
+				<span>{{:title}}</span><br>
+				<img src="{{:url}}">
+			</div>
 		
+		</div>
+
 	</div>
+</script>
+
+<script type="text/x-jsrender" id="footerTmplTwo">
+	<div class="ui-footer2">
+		<p class="ui-footer2-tmallinfo">
+		{{for tmallinfo}}
+			<a href="#">{{:text}}</a>
+		{{/for}}
+		</p>
+		<p class="ui-footer2-otherlink">
+		{{for otherlink}}
+			<a href="#">{{:text}}</a>|
+		{{/for}}
+		</p>
+		<div class="ui-footer2-copyright">
+		{{for copyright}}
+			<a href="#">{{:text}}</a>
+		{{/for}}
+		<br>
+		 	<a href="#">{{:copyrightText2}}</a>
+		 	<img src="{{:img1}}">
+		 	<a href="#">{{:copyrightText3}}</a><br>
+		 	<span>{{:copyrightText4}}</span><br>
+			<img src="{{:img2}}" style="margin-top: 5px;margin-right: 5px;">                <img src="{{:img3}}" style="margin-top: 5px;margin-left: 5px;">
+		</div>
+		<div class="ui-footer2-buttom"></div>
+	</div>
+</script>
+
+<script type="text/x-jsrender" id="mainNavTmpl">
+<div class="ui-mainnav">
+<div class="ui-mainnav-bar">
+	
+</div>
+<div class="ui-mainnav-img">
+	
+</div>
+</div>
 </script>

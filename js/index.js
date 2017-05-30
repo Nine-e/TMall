@@ -18,9 +18,17 @@ function initPage(){
 		var searchHtml = $.templates("#searchTmpl").render(searchData);
 		$(".tmall").append(searchHtml);
 
+		mainNavData = data.mainNav;
+		var mainNavHtml = $.templates("#mainNavTmpl").render(mainNavData);
+		$(".tmall").append(mainNavHtml);
+
 		footer1Data = data.footer1;
 		var footer1Html = $.templates("#footerTmplOne").render(footer1Data);
 		$(".tmall").append(footer1Html);
+
+		footer2Data = data.footer2;
+		var footer2Html = $.templates("#footerTmplTwo").render(footer2Data);
+		$(".tmall").append(footer2Html);
 
 
 	});

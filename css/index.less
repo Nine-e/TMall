@@ -1,4 +1,5 @@
 @tmallRed:#ff0036;
+@tmallFont:"Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
 @screen-xs:0;
 @screen-sm:0;
 .container{
@@ -22,7 +23,7 @@ nav{
 	padding-right: 3%;
 	color: #999;
 	font-size: 10px;
-	font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+	font-family: @tmallFont;
 	line-height: 32px;
 	span{
 		padding-right: 10px;
@@ -45,7 +46,6 @@ nav{
 
 #ui-search{
 	height: 130px;
-	border-bottom: 1px solid black;
 	font-family: arial;
 	img{
 		width: 240px;
@@ -90,16 +90,106 @@ nav{
 }
 
 #ui-footer1{
+	/* flex布局 */
 	width: 100%;
 	margin-top: 20px;
 	border-top: 1px solid #d1d7dc;
-	font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+	text-align: center;
+	font-family: @tmallFont;
 	#ui-footer1-top{
-		text-align: center;
 		img{
 			display: inline-block;
 			width: 297px;
 			height: 100px;
 		}
 	}
+	
+	#ui-footer1-buttom{
+		display: inline-flex;
+		align-items: flex-start;
+	 	box-sizing: content-box;
+		width: 1190px;
+		height: 190px;
+		padding-top: 22px;
+		border-top: 1px solid #ededed;
+	}
+}
+.ui-footer1-buttom-item{
+	display: inline-block;
+	flex-direction: column;
+	box-sizing: content-box;
+	width: 186px;
+	height: 190px;
+	padding-left: 52px;
+	text-align: left;
+	span{
+		color: #646464;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 30px;
+		text-align: left;
+	}
+	a{
+		width: 100px;
+		overflow: hidden;
+		text-align: left;
+		font-size: 12px;
+		height: 20px;
+		line-height: 20px;
+		color: #8b8b8b;
+	}
+
+}
+#footer1-img{
+		margin-top: 75px;
+	}
+.ui-footer2{
+	border-top: 2px solid #ff0036;
+	background-color: #000;
+	text-align: left;
+	min-height: 177px;
+	text-align: center;
+	font-family: @tmallFont;
+	font-size: 12px;
+
+}
+.ui-footer2-tmallinfo{
+	width: 1190px;
+	margin: auto;
+	color: #fff;
+	line-height: 25px;
+	text-align: left;
+	padding: 5px 0;
+	a{
+		margin-right: 3px;
+		color: #fff;
+		cursor: auto;
+	}
+
+}
+.ui-footer2-otherlink{
+	.ui-footer2-tmallinfo;
+}
+.ui-footer2-copyright{
+	.ui-footer2-tmallinfo;
+	padding: 0;
+	height: 110px;
+	a{
+		color: #a4a4a4;
+		margin-right: 65px;
+	}
+	span{color: #686868;font-weight: 400}
+
+}
+.ui-footer2-buttom{
+	height: 18px;
+	width: 100%;
+}
+
+.ui-mainnav{
+	width: 100%;
+}
+.ui-mainnav-bar{
+	background-color: #ff0036;
+	height:36px;
 }
