@@ -34,3 +34,11 @@ function initPage(){
 	});
 
 }
+
+$(function(){
+        // 初始化轮播
+        $(".start-slide").click(function(){
+            $("#myCarousel").carousel('cycle');
+        });
+});
+

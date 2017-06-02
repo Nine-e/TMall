@@ -127,5 +127,18 @@
 
 	},
 
-	"mainNav":{}
+	"mainNav":{
+		
+		"titleLink":[
+			{"text":"天猫会员"},
+			{"text":"天猫会员"},
+			{"text":"天猫会员"},
+			{"text":"天猫会员"},
+			{"text":"天猫会员"}
+		],
+		"img":[
+			{"url":"img/mainNav-img1.png"},
+			{"url":"img/mainNav-img2.png"}
+		]
+	}
 }
