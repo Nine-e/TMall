@@ -128,17 +128,24 @@
 	},
 
 	"mainNav":{
-		
 		"titleLink":[
 			{"text":"天猫会员"},
-			{"text":"天猫会员"},
-			{"text":"天猫会员"},
-			{"text":"天猫会员"},
-			{"text":"天猫会员"}
+			{"text":"品牌街"},
+			{"text":"电器城"},
+			{"text":"喵生鲜"},
+			{"text":"医药馆"},
+			{"text":"营业厅"},
+			{"text":"魅力惠"},
+			{"text":"飞猪旅行"},
+			{"text":"苏宁易购"}
 		],
 		"img":[
 			{"url":"img/mainNav-img1.png"},
 			{"url":"img/mainNav-img2.png"}
 		]
+	},
+
+	"hotBrand":{
+		"img":"img/hotBrand-img1.webp"
 	}
 }

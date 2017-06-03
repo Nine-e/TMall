@@ -22,6 +22,10 @@ function initPage(){
 		var mainNavHtml = $.templates("#mainNavTmpl").render(mainNavData);
 		$(".tmall").append(mainNavHtml);
 
+		hotBrandData = data.hotBrand;
+		var hotBrandHtml = $.templates("#hotBrandTmpl").render(hotBrandData);
+		$(".tmall").append(hotBrandHtml);
+
 		footer1Data = data.footer1;
 		var footer1Html = $.templates("#footerTmplOne").render(footer1Data);
 		$(".tmall").append(footer1Html);
@@ -39,6 +43,9 @@ $(function(){
         // 初始化轮播
         $(".start-slide").click(function(){
             $("#myCarousel").carousel('cycle');
+            $("#myCarousel").carousel({
+            	interval:2000
+            });
         });
 });
 
