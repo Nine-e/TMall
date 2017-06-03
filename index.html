@@ -177,24 +177,54 @@
 
 <script type="text/x-jsrender" id="hotBrandTmpl">
 <div class="ui-hotBrand">
-	<div class="content-center">
-		<div class="container ui-hotBrand-live">
+	<div class="content-center containe">
+		<div class="ui-hotBrand-live">
 			<!-- <div class="container"> -->
 				<div class="row ui-hotBrand-glive">
 				<div class="col-md-12">
-					<img src="{{:img}}">
+					<img src="{{:simg1}}" id="gliveImg">
 				</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4"></div>
-					<div class="col-md-4"></div>
-					<div class="col-md-4"></div>
+				<div class="row ui-hotBrand-slive">
+					<div class="col-md-4 ui-hotBrand-slive-item" >
+						<img src="{{:simg1}}" id="sliveImg">
+						<div class="ui-hotBrand-slive-cover mask">
+							<img src="{{:liveTmall}}">
+						</div>
+					</div>
+					<div class="col-md-4 ui-hotBrand-slive-item" >
+						<img src="{{:simg2}}" >
+						<div class="ui-hotBrand-slive-cover mask">
+							<img src="{{:liveTmall}}">
+						</div>
+					</div>
+					<div class="col-md-4 ui-hotBrand-slive-item" >
+						<img src="{{:simg3}}" >
+						<div class="ui-hotBrand-slive-cover mask">
+							<img src="{{:liveTmall}}">
+						</div>
+					</div>
+					
 				</div>
-				<div class="row"></div>
+				<div class="ui-hotBrand-livetext">
+					<img src="{{:textimg}}" >
+					<span>{{:livetext}}</span>
+				</div>
 			<!-- </div> -->
 		</div>
 		<div class="ui-hotBrand-brand">
-			
+			<div class="row">
+			{{for hotBrandImg}}
+				<div class="col-md-2 ui-hotBrand-brand-item">
+					<img src="{{:url}}">
+					<div class="ui-hotBrand-brand-item-cover mask">
+						<span>关注人数30.2万</span>
+						<a>点击进入</a>
+					</div>
+				</div>
+			{{/for}}	
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

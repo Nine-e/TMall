@@ -146,6 +146,40 @@
 	},
 
 	"hotBrand":{
-		"img":"img/hotBrand-img1.webp"
+		"simg1":"img/slive-img1.webp",
+		"simg2":"img/slive-img2.webp",
+		"simg3":"img/hotBrand-img1.webp",
+		"textimg":"img/livetext-img.png",
+		"livetext":"直播品牌边看边买！",
+		"liveTmall":"img/liveTmall.png",
+		"img":"img/hotBrand-img2.webp",
+		"hotBrandImg":[
+			{"url":"img/hotBrand-img2.webp"},
+			{"url":"img/hotBrand-img3.webp"},
+			{"url":"img/hotBrand-img4.webp"},
+			{"url":"img/hotBrand-img5.webp"},
+			{"url":"img/hotBrand-img6.webp"},
+			{"url":"img/hotBrand-img7.webp"},
+			{"url":"img/hotBrand-img8.webp"},
+			{"url":"img/hotBrand-img2.webp"},
+			{"url":"img/hotBrand-img3.webp"},
+			{"url":"img/hotBrand-img4.webp"},
+			{"url":"img/hotBrand-img5.webp"},
+			{"url":"img/hotBrand-img6.webp"},
+			{"url":"img/hotBrand-img7.webp"},
+			{"url":"img/hotBrand-img8.webp"},
+			{"url":"img/hotBrand-img9.webp"},
+			{"url":"img/hotBrand-img10.webp"},
+			{"url":"img/hotBrand-img8.webp"},
+			{"url":"img/hotBrand-img2.webp"},
+			{"url":"img/hotBrand-img3.webp"},
+			{"url":"img/hotBrand-img4.webp"},
+			{"url":"img/hotBrand-img5.webp"},
+			{"url":"img/hotBrand-img6.webp"},
+			{"url":"img/hotBrand-img7.webp"},
+			{"url":"img/hotBrand-img8.webp"}
+
+
+		]
 	}
 }

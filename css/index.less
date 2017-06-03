@@ -18,7 +18,7 @@
 	margin: auto;
 }
 body{
-	//background-color: @tamllRed;
+	background-color:#f5f5f5;
 	padding: 0;
 	margin: 0;
 }
@@ -106,6 +106,7 @@ nav{
 		margin-top: 5px;
 		border: none;
 		outline: none;
+		background-color: #f5f5f5;
 	}
 }
 
@@ -223,7 +224,7 @@ nav{
 	height: 36px;
 	background-color: #e22127;
 	/* margin-left:40px; */
-	margin-left: -250px;
+	margin-left: -265px;
 	margin-right: 15px;
 	color: #fff;
 	font-family: @tmallFont;
@@ -243,7 +244,7 @@ nav{
 	line-height: 36px;
 	/*width: 90px;*/
 	height: 36px;
-	margin-left: -35px;
+	margin-left: -45px;
 	font-size: 16px;
 	font-weight: 500;
 	img{
@@ -266,29 +267,119 @@ nav{
 .ui-mainnav-img{
 	width: 100%;
 	height: 500px;
+	.item {
+		text-align: center;
+		img{ margin: auto; }
+	}
 }
 .ui-hotBrand{
 	width: 100%;
 	height: 436px;
 	margin-top: 30px;
 	div{
-		background-color: #666;
+		
 	}
 }
 .ui-hotBrand-live{
 	display: inline-block;
-	padding: 0;
+	float: left;
 	width: 40%;
 	height: 100%;
+	padding: 0;
+	background-color: #000;
 }
 .ui-hotBrand-glive{
 	margin: 0;
-	height: 245px;
+	height: 275px;
 	img{
-		height: 245px;
-		width: 40%;
+		height: 100%;
+		width: 100%;
 	}
 	div{
 		padding: 0;
+	}
+}
+.ui-hotBrand-slive{
+	margin-top: 10px;
+	height: 90px;
+	img{
+		height: 100%;
+		width: 100%;
+	}
+}
+.ui-hotBrand-slive-cover{
+	position: absolute;
+	top: 0;
+	left: 15px;
+	width: 144px;
+	height: 81px;
+	background-color: rgba(100,100,100,.5);
+	z-index: 10;
+	img{
+		width: 46px;
+		height: 40px;
+		margin:20px 50px;
+
+	}
+}
+.ui-hotBrand-livetext{
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 21px;
+	img{
+		height: 31px;
+		width: 81px;
+		margin-top: 9px;
+		margin-right: 9px;
+	}
+	span{color: #fff}
+}
+.ui-hotBrand-brand{
+	display: inline-block;
+	width: 60%;
+	height: 100%;
+	padding-left: 30px;
+	background-color: #fff;
+}
+.ui-hotBrand-brand-item{
+	background-color: #fff;
+	height: 109px;
+	padding: 0;
+	border-right: #eee solid 1px;
+	border-bottom: #eee solid 1px;
+	img{
+		margin-top:29px;
+		margin-left: 13px;
+	}
+}
+.ui-hotBrand-brand-item-cover{
+	position: absolute;
+	top: 0;
+	width: 124.5px;
+	height: 109px;
+	background-color: rgba(0,0,0,.8);
+	transition: all .3s ease-out;
+	z-index: 10;
+	text-align: center;
+	span{
+		display: block;
+		color: #fff;
+		height: 60px;
+		text-align: center;
+		line-height: 90px;
+		font-family: @tmallFont;
+		font-size: 12px;
+	}
+	a{
+		display: inline-block;
+		color: #fff;
+		width: 63px;
+		height: 18px;
+		margin: auto;
+		font-size: 12px;
+		line-height: 16px;
+		background-color: red;
+		border-radius: 9px;
+		text-align: center;
 	}
 }
