@@ -43,6 +43,8 @@ function initPage(){
 
         initCarousel();//回调
         mask();
+        imgShake();
+        useAffix();
 
 	});
 
@@ -75,3 +77,26 @@ function mask(){
 	});
 }
 
+function imgShake(){
+	$(".floor-middle-item").mouseover(function(){
+		$(this).find("img").css("margin-right","10px");
+	});
+	$(".floor-middle-item").mouseout(function(){
+		$(this).find("img").css("margin-right","0");
+	});
+	$(".floor-left-item").mouseover(function(){
+		$(this).find("img").css("margin-right","10px");
+	});
+	$(".floor-left-item").mouseout(function(){
+		$(this).find("img").css("margin-right","0");
+	});
+}
+
+function useAffix(){
+	$("#myNav").affix({
+		offset:{
+			top:1050
+		}
+	});
+	$("#myScrollspy").scrollspy();
+}

@@ -181,5 +181,39 @@
 
 
 		]
+
+	},
+	"pinkFloor":{
+		"titleLink":[
+			{"linkText":"连衣裙"},
+			{"linkText":"t恤男"},
+			{"linkText":"美容护肤"},
+			{"linkText":"休闲男鞋"},
+			{"linkText":"黄金项链"},
+			{"linkText":"单鞋"},
+			{"linkText":"女包"},
+			{"linkText":"文胸"},
+			{"linkText":"大牌腕表"}
+		],
+		"rightImg":"img/pinkRight-img.jpg",
+		"rightText":"大牌商场同款>",
+		"rightTitle":"聚划算女装会场",
+		"rightSubTitle":"满366减66",
+		"item1":[
+			{"title":"悠享假日时光","text":"健康非海绵聚拢文胸","url":"img/pinkMiddle-img1.jpg"},
+			{"title":"2017春夏造型","text":"短款帅气牛仔夹克","url":"img/pinkMiddle-img2.jpg"},
+			{"title":"真皮斜挎包男包","text":"真皮斜挎包男包单肩包","url":"img/pinkMiddle-img3.jpg"},
+			{"title":"17夏季新款T恤","text":"简约舒适,时尚百搭","url":"img/pinkMiddle-img4.jpg"},
+			{"title":"内衣无痕","text":"安心打底舒适穿着","url":"img/pinkMiddle-img5.jpg"},
+			{"title":"方领男士衬衫","text":"薄款舒适蚕丝质感","url":"img/pinkMiddle-img6.jpg"}
+
+		],
+		"item2":[
+			{"title":"人气高 评价好","text":"青年休闲潮包","url":"img/pinkLeft-img1.jpg"},
+			{"title":"爽夏新品焕新","text":"每周夏装好货焕新","url":"img/pinkLeft-img2.jpg"},
+			{"title":"夏季热销","text":"优质面料","url":"img/pinkLeft-img3.jpg"}
+
+		]
 	}
+
 }
