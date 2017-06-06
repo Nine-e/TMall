@@ -3,19 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Examples</title>
+<title>TMall</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 <link href="css/index.less" rel="stylesheet/less">
-
 </head>
+
 <body data-spy="scroll" data-target="#myScrollspy">
-<div class="tmall" class="container">
-	
-</div>
+<div class="tmall"></div>
 
 <script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -41,16 +39,16 @@
 </script>
 
 <script type="text/x-jsrender" id="searchTmpl">
-<div id="ui-search">
-<div class="content-center" id="ui-search-content">
+<div class="ui-search">
+<div class="content-center" class="ui-search-content">
 	<img src="{{:img}}">
-	<div id="ui-search-content-item">
-		<div id="ui-search-top">
+	<div class="ui-search-item">
+		<div class="ui-search-item-top">
 			<input type="text" placeholder="{{:placeholder}}" />
-			<div id="ui-search-top-button">搜 索</div>
+			<div class="ui-search-item-button">搜 索</div>
 		</div>
 		{{for text}}
-		<div id="ui-search-buttom">
+		<div class="ui-search-item-buttom">
 			{{:item}}
 		</div>
 		{{/for}}
@@ -59,21 +57,21 @@
 </div>
 </script>
 
-<script type="text/x-jsrender" id="footerTmplOne">
-	<div id="ui-footer1">
-		<div id="ui-footer1-top">
+<script type="text/x-jsrender" id="footer1Tmpl">
+	<div class="ui-footer1">
+		<div class="ui-footer1-top">
 		{{for img}}
 			<img src="{{:url}}">
 		{{/for}}
 		</div>
 
-		<div id="ui-footer1-buttom">
+		<div class="ui-footer1-buttom">
 			<div class="ui-footer1-buttom-item">
 				<span>{{:title1}}</span><br>
 				{{for a1}}
 				<a href="#">{{:text}}</a><br>
 				{{/for}}
-				<img src="img/footer1-img.jpg" id="footer1-img">	
+				<img src="img/footer/footer1-img.jpg" id="footer1-img">	
 			</div>
 		{{for items}}
 			<div class="ui-footer1-buttom-item">
@@ -84,7 +82,7 @@
 			</div>
 		{{/for}}
 			<div class="ui-footer1-buttom-item">
-				<span>{{:title}}</span><br>
+				<span>{{:title5}}</span><br>
 				<img src="{{:url}}">
 			</div>
 		
@@ -93,7 +91,7 @@
 	</div>
 </script>
 
-<script type="text/x-jsrender" id="footerTmplTwo">
+<script type="text/x-jsrender" id="footer2Tmpl">
 	<div class="ui-footer2">
 		<p class="ui-footer2-tmallinfo">
 		{{for tmallinfo}}
@@ -154,13 +152,13 @@
     <!-- 轮播（Carousel）项目 -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="img/carousel-img1.jpg" alt="First slide">
+            <img src="img/carousel/carousel-img1.jpg" alt="First slide">
         </div>
         <div class="item">
-            <img src="img/carousel-img2.jpg" alt="Second slide">
+            <img src="img/carousel/carousel-img2.jpg" alt="Second slide">
         </div>
         <div class="item">
-            <img src="img/carousel-img3.jpg" alt="Third slide">
+            <img src="img/carousel/carousel-img3.jpg" alt="Third slide">
         </div>
     </div>
     <!-- 轮播（Carousel）导航 -->
@@ -178,39 +176,27 @@
 <script type="text/x-jsrender" id="hotBrandTmpl">
 <div class="ui-hotBrand">
 	<div class="content-center containe">
+	<!-- 使用bootstrap布局   -->
 		<div class="ui-hotBrand-live">
-			<!-- <div class="container"> -->
 				<div class="row ui-hotBrand-glive">
 				<div class="col-md-12">
-					<img src="{{:simg1}}" id="gliveImg">
+					<img src="{{:gimg}}" id="gliveImg">
 				</div>
 				</div>
 				<div class="row ui-hotBrand-slive">
+				{{for simg}}
 					<div class="col-md-4 ui-hotBrand-slive-item" >
-						<img src="{{:simg1}}" id="sliveImg">
+						<img src="{{:url}}" id="sliveImg">
 						<div class="ui-hotBrand-slive-cover mask">
 							<img src="{{:liveTmall}}">
 						</div>
 					</div>
-					<div class="col-md-4 ui-hotBrand-slive-item" >
-						<img src="{{:simg2}}" >
-						<div class="ui-hotBrand-slive-cover mask">
-							<img src="{{:liveTmall}}">
-						</div>
-					</div>
-					<div class="col-md-4 ui-hotBrand-slive-item" >
-						<img src="{{:simg3}}" >
-						<div class="ui-hotBrand-slive-cover mask">
-							<img src="{{:liveTmall}}">
-						</div>
-					</div>
-					
+				{{/for}}
 				</div>
 				<div class="ui-hotBrand-livetext">
 					<img src="{{:textimg}}" >
 					<span>{{:livetext}}</span>
 				</div>
-			<!-- </div> -->
 		</div>
 		<div class="ui-hotBrand-brand">
 			<div class="row">
@@ -230,10 +216,7 @@
 </div>
 </script>
 
-<script type="text/x-jsrender" id="pinkFloorTmpl">
-
-<!-- <div data-spy="scroll" data-target="#myScrollspy" id="scrollDiv"> -->
-
+<script type="text/x-jsrender" id="floorTmpl">
 <div id="myScrollspy">
 	<ul class="nav nav-tabs nav-stacked" id="myNav">
 	    <li><a>导航</a></li>
@@ -241,143 +224,144 @@
 		<li><a href="#section-2">潮店酷玩</a></li>
 		<li><a href="#section-3">居家生活</a></li>
 	</ul>
-</div>
-
-<div class="ui-pinkFloor" id="section-1">
+</div> 
+<div class="ui-floor" id="section-1">
 <div class="content-center">
-	<div class="ui-pinkFloor-title">
-	<div class="ui-pinkFloor-title-left">
-		<i class="color-mark"></i>
-		<span class="floor-name">美丽人生</span>
-		<span class="floor-sub-name">FASHION & BEAUTY</span>
+	<div class="ui-floor-title">
+	<div class="ui-floor-title-left">
+		<i class="ui-color-mark"></i>
+		<span class="ui-floor-name">美丽人生</span>
+		<span class="ui-floor-sub-name">FASHION & BEAUTY</span>
 	</div>
-	<div class="ui-pinkFloor-title-right">
-	{{for titleLink}}
+	<div class="ui-floor-title-right">
+	{{for pinkTitleLink}}
 		<a href="#">{{:linkText}}</a>
 	{{/for}}
 	</div>
 	</div>
-	<div class="ui-pinkFloor-body">
-		<div class="ui-pinkFloor-body-right">
-			<img src="{{:rightImg}}">
-			<div class="act-title-ctn">{{:rightText}}</div>
-			<div class="title-con">
-				<h3>{{:rightTitle}}</h3>
-				<h4>{{:rightSubTitle}}</h4>
+	<div class="ui-floor-body">
+		<div class="ui-floor-body-right">
+			<img src="{{:pinkRightImg}}">
+			<div class="ui-act-title-ctn">{{:pinkRightText}}</div>
+			<div class="ui-title-con">
+				<h3>{{:pinkRightTitle}}</h3>
+				<h4>{{:pinkRightSubTitle}}</h4>
 			</div>
 		</div>
-		<div class="ui-pinkFloor-body-middle">
-		{{for item1}}
-			<div class="floor-middle-item">
+		<div class="ui-floor-body-middle">
+		{{for pinkItem1}}
+			<div class="ui-floor-middle-item">
 				<h4>{{:title}}</h4>
 				<h5>{{:text}}</h5>
 				<img src="{{:url}}" >
 			</div>
 		{{/for}}
 		</div>
-		<div class="ui-pinkFloor-body-left">
-			{{for item2}}
-			<div class="floor-left-item">
+		<div class="ui-floor-body-left">
+			{{for pinkItem2}}
+			<div class="ui-floor-left-item">
 				<h4>{{:title}}</h4>
 				<h5>{{:text}}</h5>
 				<img src="{{:url}}" >
 			</div>
-		{{/for}}
+		    {{/for}}
 		</div>
 	</div>
 </div>
 </div>
 
-<div class="ui-pinkFloor" id="section-2">
+<div class="ui-floor" id="section-2">
 <div class="content-center">
-	<div class="ui-pinkFloor-title">
-	<div class="ui-pinkFloor-title-left">
-		<i class="color-mark"></i>
-		<span class="floor-name" >潮店酷玩</span>
-		<span class="floor-sub-name">ELECTRONICS</span>
+	<div class="ui-floor-title">
+	<div class="ui-floor-title-left">
+		<i class="ui-color-mark"></i>
+		<span class="ui-floor-name">居家生活</span>
+		<span class="ui-floor-sub-name">GROCERY & HEALTH</span>
 	</div>
-	<div class="ui-pinkFloor-title-right">
-	{{for titleLink}}
+	<div class="ui-floor-title-right">
+	{{for blueTitleLink}}
 		<a href="#">{{:linkText}}</a>
 	{{/for}}
 	</div>
 	</div>
-	<div class="ui-pinkFloor-body">
-		<div class="ui-pinkFloor-body-right">
-			<img src="{{:rightImg}}">
-			<div class="act-title-ctn">{{:rightText}}</div>
-			<div class="title-con">
-				<h3>{{:rightTitle}}</h3>
-				<h4>{{:rightSubTitle}}</h4>
+	<div class="ui-floor-body">
+		<div class="ui-floor-body-right">
+			<img src="{{:blueRightImg}}">
+			<div class="ui-act-title-ctn">{{:blueRightText}}</div>
+			<div class="ui-title-con">
+				<h3>{{:blueRightTitle}}</h3>
+				<h4>{{:blueRightSubTitle}}</h4>
 			</div>
 		</div>
-		<div class="ui-pinkFloor-body-middle">
-		{{for item1}}
-			<div class="floor-middle-item">
+		<div class="ui-floor-body-middle">
+		{{for blueItem1}}
+			<div class="ui-floor-middle-item">
 				<h4>{{:title}}</h4>
 				<h5>{{:text}}</h5>
 				<img src="{{:url}}" >
 			</div>
 		{{/for}}
 		</div>
-		<div class="ui-pinkFloor-body-left">
-			{{for item2}}
-			<div class="floor-left-item">
+		<div class="ui-floor-body-left">
+			{{for blueItem2}}
+			<div class="ui-floor-left-item">
 				<h4>{{:title}}</h4>
 				<h5>{{:text}}</h5>
 				<img src="{{:url}}" >
 			</div>
-		{{/for}}
+		    {{/for}}
 		</div>
 	</div>
 </div>
 </div>
 
-<div class="ui-pinkFloor" id="section-3">
+<div class="ui-floor" id="section-3">
 <div class="content-center">
-	<div class="ui-pinkFloor-title">
-	<div class="ui-pinkFloor-title-left">
-		<i class="color-mark"></i>
-		<span class="floor-name" >美丽人生</span>
-		<span class="floor-sub-name">FASHION & BEAUTY</span>
+	<div class="ui-floor-title">
+	<div class="ui-floor-title-left">
+		<i class="ui-color-mark"></i>
+		<span class="ui-floor-name">户外出行</span>
+		<span class="ui-floor-sub-name">OUTDOORS & AUTOMOTIVE</span>
 	</div>
-	<div class="ui-pinkFloor-title-right">
-	{{for titleLink}}
+	<div class="ui-floor-title-right">
+	{{for greenTitleLink}}
 		<a href="#">{{:linkText}}</a>
 	{{/for}}
 	</div>
 	</div>
-	<div class="ui-pinkFloor-body">
-		<div class="ui-pinkFloor-body-right">
-			<img src="{{:rightImg}}">
-			<div class="act-title-ctn">{{:rightText}}</div>
-			<div class="title-con">
-				<h3>{{:rightTitle}}</h3>
-				<h4>{{:rightSubTitle}}</h4>
+	<div class="ui-floor-body">
+		<div class="ui-floor-body-right">
+			<img src="{{:greenRightImg}}">
+			<div class="ui-act-title-ctn">{{:greenRightText}}</div>
+			<div class="ui-title-con">
+				<h3>{{:greenRightTitle}}</h3>
+				<h4>{{:greenRightSubTitle}}</h4>
 			</div>
 		</div>
-		<div class="ui-pinkFloor-body-middle">
-		{{for item1}}
-			<div class="floor-middle-item">
+		<div class="ui-floor-body-middle">
+		{{for greenItem1}}
+			<div class="ui-floor-middle-item">
 				<h4>{{:title}}</h4>
 				<h5>{{:text}}</h5>
 				<img src="{{:url}}" >
 			</div>
 		{{/for}}
 		</div>
-		<div class="ui-pinkFloor-body-left">
-			{{for item2}}
-			<div class="floor-left-item">
+		<div class="ui-floor-body-left">
+			{{for greenItem2}}
+			<div class="ui-floor-left-item">
 				<h4>{{:title}}</h4>
 				<h5>{{:text}}</h5>
 				<img src="{{:url}}" >
 			</div>
-		{{/for}}
+		    {{/for}}
 		</div>
 	</div>
 </div>
 </div>
 
-<!-- </div> -->
+<div class="ui-floor-end">
+	<img src="img/end-img.png">
+</div>
 
 </script>

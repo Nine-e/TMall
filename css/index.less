@@ -1,11 +1,8 @@
 @tmallRed:#ff0036;
 @tmallFont:"Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
 @tmallWidth:1230px;
-@screen-xs:0;
-@screen-sm:0;
-.container{
-	width: 970px !important;
-}
+
+/*通用选择器的样式*/
 .float-left{
 	float: left;
 }
@@ -17,19 +14,22 @@
 	height: 100%;
 	margin: auto;
 }
+
+/*总体框架的样式*/
 body{
 	background-color:#f5f5f5;
 	padding: 0;
 	margin: 0;
 }
+
+/*顶部导航的样式*/
 nav{
-	background-color: #f2f2f2;
 	height: 32px;
 	color: #999;
 	font-size: 10px;
 	font-family: @tmallFont;
 	line-height: 32px;
-	/* text-align: center; */
+	background-color: #f2f2f2;
 	div{
 		width: @tmallWidth;
 		margin: auto;
@@ -44,96 +44,94 @@ nav{
 				color: #ff0036;
 				text-decoration: none;
 			}
-			/*&:visited
-			{
-				color: #999;
-				text-decoration: none;
-			}*/
 		}
 	}
 }
 
-#ui-search{
-	/* height: 130px; */
+/*搜索框部分的样式*/
+.ui-search{
 	font-family: arial;
 	text-align: center;
 
-	#ui-search-content{
-		height: 130px;
-		text-align: center;
-	}
-
 	img{
+		float: left;
 		width: 240px;
 		height: 130px;
-		margin: 1px 25px 1px 25px;
-		float: left;
+		margin: 1px 25px;	
 	}
-	#ui-search-content-item{
-		width: 630px;
-		margin: auto;
-		height: 130px;
-		padding-top: 35px;
-	}
-	#ui-search-top{
-		width: 100%;
-		border: 2px solid @tmallRed;
-		height: 40px;
-		#ui-search-top-button{
-			display: inline-block;
-			float: right;
-			height: 100%;
-			width: 20%;
-			background-color: @tmallRed;
-			color: white;
-			font-size: 18px;
-			font-weight: 700;
-			text-align: center;
-			line-height: 40px;
-		}
-	}
-	#ui-search-buttom{
-			display: inline-block;
-			float: left;
-			padding: 0 12px;
-			margin-top: 5px;
-			height: 18px;
-			font-size: 14px;
-		}
+	
 	input{
 		width: 75%;
 		margin-left: 15px;
 		margin-top: 5px;
+		background-color: #f5f5f5;
 		border: none;
 		outline: none;
-		background-color: #f5f5f5;
 	}
 }
 
-#ui-footer1{
-	/* flex布局 */
+.ui-search-content{
+	height: 130px;
+	text-align: center;
+}
+.ui-search-item{
+	width: 630px;
+	height: 130px;
+	margin: auto;
+	padding-top: 35px;
+}
+.ui-search-item-top{
 	width: 100%;
-	margin-top: 20px;
-	border-top: 1px solid #d1d7dc;
+	height: 40px;
+	border: 2px solid @tmallRed;		
+}
+.ui-search-item-button{
+	display: inline-block;
+	float: right;
+	height: 100%;
+	width: 20%;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 40px;
+	background-color: @tmallRed;
+}
+.ui-search-item-buttom{
+	display: inline-block;
+	float: left;
+	height: 18px;
+	padding: 0 12px;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+/*页脚一的样式*/
+.ui-footer1{
+    width: 100%;
 	text-align: center;
 	font-family: @tmallFont;
-	#ui-footer1-top{
-		img{
-			display: inline-block;
-			width: 297px;
-			height: 100px;
-		}
+	background-color: #fff;
+	border-top: 1px solid #d1d7dc;
+}
+.ui-footer1-top{
+	text-align: center;
+	padding: 25px 0;
+	img{
+		display: inline-block;
+		width: 297px;
+		height: 100px;
 	}
-	
-	#ui-footer1-buttom{
-		display: inline-flex;
-		align-items: flex-start;
-	 	box-sizing: content-box;
-		width: 1190px;
-		height: 190px;
-		padding-top: 22px;
-		border-top: 1px solid #ededed;
-	}
+}
+.ui-footer1-buttom{
+	/* flex布局 */
+	display: inline-flex;
+	align-items: flex-start;
+	box-sizing: content-box;
+	width: 1190px;
+	height: 190px;
+	padding-top: 22px;
+	border-top: 1px solid #ededed;
 }
 .ui-footer1-buttom-item{
 	display: inline-block;
@@ -162,34 +160,32 @@ nav{
 
 }
 #footer1-img{
-		margin-top: 75px;
-	}
+	margin-top: 75px;
+}
+
+/*页脚二的样式*/
 .ui-footer2{
-	border-top: 2px solid #ff0036;
-	background-color: #000;
-	text-align: left;
 	min-height: 177px;
 	text-align: center;
 	font-family: @tmallFont;
 	font-size: 12px;
-
+	text-align: left;
+	border-top: 2px solid #ff0036;
+	background-color: #000;
 }
-.ui-footer2-tmallinfo{
+.ui-footer2-tmallinfo,
+.ui-footer2-otherlink{
 	width: 1190px;
 	margin: auto;
+	padding: 5px 0;
 	color: #fff;
 	line-height: 25px;
 	text-align: left;
-	padding: 5px 0;
 	a{
 		margin-right: 3px;
 		color: #fff;
 		cursor: auto;
 	}
-
-}
-.ui-footer2-otherlink{
-	.ui-footer2-tmallinfo;
 }
 .ui-footer2-copyright{
 	.ui-footer2-tmallinfo;
@@ -199,23 +195,26 @@ nav{
 		color: #a4a4a4;
 		margin-right: 65px;
 	}
-	span{color: #686868;font-weight: 400}
-
+	span{
+		color: #686868;
+		font-weight: 400
+	}
 }
 .ui-footer2-buttom{
 	height: 18px;
 	width: 100%;
 }
 
+/*主导航的样式*/
 .ui-mainnav{
 	width: 100%;
 }
 .ui-mainnav-bar{
-	background-color: #ff0036;
 	height:36px;
 	text-align: center;
 	color: #fff;
 	font-family: @tmallFont;
+	background-color: #ff0036;
 }
 .ui-mainnav-bar-item1{
 	float: left;
@@ -223,55 +222,50 @@ nav{
 	width: 200px;
 	height: 36px;
 	background-color: #e22127;
-	/* margin-left:40px; */
 	margin-left: -265px;
 	margin-right: 15px;
+	padding-left: 15px;
 	color: #fff;
 	font-family: @tmallFont;
 	font-size: 16px;
 	font-weight: bold;
-	padding-left: 15px;
 	span{
 		float: left;
-		line-height: 36px;
 		margin-left: 5px;
+		line-height: 36px;
 	} 
 }
 .ui-mainnav-bar-item2{
 	display: inline-block;
 	box-sizing: content-box;
 	float: left;
-	line-height: 36px;
-	/*width: 90px;*/
 	height: 36px;
 	margin-left: -45px;
 	font-size: 16px;
 	font-weight: 500;
+	line-height: 36px;
 	img{
 		width: 90px;
 	    height: 36px;
-	    margin-top: -3px;
 	    margin: 0 10px;
 	}
-
 }
 .ui-mainnav-bar-item3{
 	.ui-mainnav-bar-item2;
 	padding: 0 15px;
 	margin-left: 0;
-	a{
-		color: #fff;
-
-	}
+	a{ color: #fff;}
 }
 .ui-mainnav-img{
 	width: 100%;
 	height: 500px;
-	.item {
-		text-align: center;
-		img{ margin: auto; }
-	}
 }
+.item {
+	text-align: center;
+	img{ margin: auto;}
+}
+
+/*热门品牌部分的样式*/
 .ui-hotBrand{
 	width: 100%;
 	height: 436px;
@@ -383,20 +377,22 @@ nav{
 		text-align: center;
 	}
 }
-.ui-pinkFloor{
+
+/*分区推荐部分的样式*/
+.ui-floor{
 	height: 470px;
 	width:100%;
 	margin-top: 30px;
 	text-align: center;
 
 }
-.color-mark{
+.ui-color-mark{
 	display: inline-block;
 	width: 5px;
 	height: 20px;
 	vertical-align: top;
 }
-.ui-pinkFloor-title{
+.ui-floor-title{
 	height: 20px;
 	width: 100%;
 	i{
@@ -404,11 +400,11 @@ nav{
 	}
 	
 }
-.ui-pinkFloor-title-left{
+.ui-floor-title-left{
 	float: left;
 	text-align: left;
 }
-.ui-pinkFloor-title-right{
+.ui-floor-title-right{
 	float: right;
 	text-align: left;
 	a{
@@ -420,7 +416,7 @@ nav{
 		color: #000;
 	}
 }
-.floor-name{
+.ui-floor-name{
 	display: inline-block;
 	vertical-align: top;
 	font-family: @tmallFont;
@@ -429,7 +425,7 @@ nav{
 	line-height: 18px;
 	margin-left: 10px;
 }
-.floor-sub-name{
+.ui-floor-sub-name{
 	display: inline-block;
 	vertical-align: top;
 	font-family: @tmallFont;
@@ -438,17 +434,17 @@ nav{
 	line-height: 24px;
 	margin-left: 10px;
 }
-.ui-pinkFloor-body{
+.ui-floor-body{
 	height: 440px;
 	width: 100%;
 	margin-top: 10px;
 }
-.title-con{
+.ui-title-con{
 	width: 100%;
 	height: 110px;
 	color: #fff;
 }
-.ui-pinkFloor-body-right{
+.ui-floor-body-right{
 	display: inline-flex;
 	width: 20%;
 	height: 100%;
@@ -458,27 +454,11 @@ nav{
 		width: 100%;
 		height: 330px;
 	}
-	.title-con{
+	.ui-title-con{
 		background-color: #ea5f8d;
 	}
 }
-#section-2{
-	i{
-		background-color: #0AA6E8;
-	}
-	.title-con{
-		background-color: #0AA6E8;
-	}
-}
-#section-3{
-	i{
-		background-color: #64c333;
-	}
-	.title-con{
-		background-color: #64c333;
-	}
-}
-.act-title-ctn{
+.ui-act-title-ctn{
 	width: 100%;
 	height: 30px;
 	background-color: rgba(255,255,255,.8);
@@ -488,13 +468,13 @@ nav{
 	line-height: 30px;
 	margin-top: -30px;
 }
-.ui-pinkFloor-body-middle{
+.ui-floor-body-middle{
 	display: inline-block;
 	width: 60%;
 	height: 100%;
 	float: left;
 }
-.floor-middle-item{
+.ui-floor-middle-item{
 	display: inline-block;
 	width: 33.3%;
 	height: 220px;
@@ -516,14 +496,14 @@ nav{
 	}
 }
 
-.ui-pinkFloor-body-left{
+.ui-floor-body-left{
 	display: inline-block;
 	width: 20%;
 	height: 100%;
 	float: left;
 	margin-left: -1px;
 }
-.floor-left-item{
+.ui-floor-left-item{
 	display: inline-block;
 	width: 100%;
 	height: 147px;
@@ -545,26 +525,48 @@ nav{
 		transition: all .3s ease-out;
 	}
 }
+#section-2{
+	i{
+		background-color: #0AA6E8;
+	}
+	.ui-title-con{
+		background-color: #0AA6E8;
+	}
+	h5{
+		color: #0AA6E8;
+	}
+}
+#section-3{
+	i{
+		background-color: #64c333;
+	}
+	.ui-title-con{
+		background-color: #64c333;
+	}
+}
+.ui-floor-end{
+	width: 100%;
+	text-align: center;
+	img{
+		margin: auto;
+	}
+}
 
 /* Custom Styles */
-
-
 #myScrollspy{
 	display: inline-block;
-	float: left;
-	width: 36px;
-	margin-left: 200px;
-	font-size: 12px;
+	float: right;
+	width: 20px;
+	font-size: 14px;
 	line-height: 36px;
 }
     ul.nav-tabs{
-        width: 36px;
-        margin-top: 20px;
-        
+        width: 20px;
+        margin-top:20px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
     }
     ul.nav-tabs li{
-    	height: 36px;
+    	height: 100px;
         margin: 0;
         padding: 2px;
         background-color: #666;
@@ -580,18 +582,46 @@ nav{
     	color: #fff;
         margin: 0;
         padding: 0;
+        border: none;
     }
-    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+   /* ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
         background: #0088cc;
         color: #fff;
         border: none;
-    }
-    ul.nav-tabs li:first-child a{
+    }*/
+    /*ul.nav-tabs li:first-child a{
         
     }
     ul.nav-tabs li:last-child a{
         
-    }
+    }*/
     ul.nav-tabs.affix{
-        top: 30px; /* Set the top position of pinned element */
+        top: 40px; /* Set the top position of pinned element */
+    }
+    ul.nav-tabs li:nth-child(2).active {
+    	background-color:  #ea5f8d;
+    	a{
+    		background-color:  #ea5f8d;
+    		border: none;
+    	}
+    }
+    ul.nav-tabs li:nth-child(3).active {
+    	background-color: #0AA6E8;
+    	a{
+    		background-color: #0AA6E8;
+    		border: none;
+    	}
+    }
+    ul.nav-tabs li:nth-child(4).active {
+    	background-color: #64c333;
+    	a{
+    		background-color: #64c333;
+    		border: none;
+    	}
+    }
+    ul.nav-tabs li:nth-child(2){
+    	a:hover{
+    		background-color:  #ea5f8d;
+    		border: none;
+    	}
     }

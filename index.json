@@ -4,17 +4,19 @@
 		{"text":"喵，欢迎来到天猫"},
 		{"text":"请登录"},
 		{"text":"免费注册"}],
+
 		"right":[
-		{"text":"我的淘宝"},
-		{"text":"我关注的品牌"},
-		{"text":"购物车"},
-		{"text":"收藏夹"},
-		{"text":"手机版"},
-		{"text":"淘宝网"},
-		{"text":"企业购"},
+		{"text":"网站导航"},
 		{"text":"商家支持"},
-		{"text":"网站导航"}]
+		{"text":"企业购"},
+		{"text":"淘宝网"},
+		{"text":"手机版"},
+		{"text":"收藏夹"},
+		{"text":"购物车"},
+		{"text":"我关注的品牌"},
+		{"text":"我的淘宝"}]
 	},
+	
 	"search":{
 		"img":"img/img1.png",
 		"text":[
@@ -29,55 +31,57 @@
 			{"item":"口红"}
 		]
 	},
+
 	"footer1":{
 		"img":[
-			{"url":"img/footer1-img1.png"},
-			{"url":"img/footer1-img2.png"},
-			{"url":"img/footer1-img3.png"},
-			{"url":"img/footer1-img4.png"}
+			{"url":"img/footer/footer1-img1.png"},
+			{"url":"img/footer/footer1-img2.png"},
+			{"url":"img/footer/footer1-img3.png"},
+			{"url":"img/footer/footer1-img4.png"}
 		],
 		"title1":"购物指南",
 		"a1":[
-		    	{"text":"免费注册"},
+				{"text":"免费注册"},
 				{"text":"开通支付宝"},
 				{"text":"支付宝充值"}
-		    ],
+			],
 		"items":[
-		     {
-		    	"title":"天猫保障",
-		    	"a":[
-		    		{"text":"发票保障"},
+			 {
+				"title":"天猫保障",
+				"a":[
+					{"text":"发票保障"},
 					{"text":"售后规则"},
 					{"text":"缺货赔付"}
-		    		]
-		    },
-		     {
-		    	"title":"支付方式",
-		    	"a":[
-		    		{"text":"快捷支付"},
+					]
+			},
+			 {
+				"title":"支付方式",
+				"a":[
+					{"text":"快捷支付"},
 					{"text":"信用卡"},
 					{"text":"余额宝"},
 					{"text":"蚂蚁花呗"},
 					{"text":"货到付款"}
-		    		]
-		    },
-		     {
-		    	"title":"商家服务",
-		    	"a":[
-		    		{"text":"商家入驻"},
+					]
+			},
+			 {
+				"title":"商家服务",
+				"a":[
+					{"text":"商家入驻"},
 					{"text":"商家中心"},
 					{"text":"天猫智库"},
 					{"text":"天猫规则"},
 					{"text":"物流服务"},
 					{"text":"喵言喵语"},
 					{"text":"运营服务"}
-		    		]
-		    }
+					]
+			}
 
 		],
-		"title":"手机天猫",
-		"url":"img/footer1-img5.png"
+		"title5":"手机天猫",
+		"url":"img/footer/footer1-img5.png"
 	},
+
 	"footer2":{
 		"tmallinfo":[
 			{"text":"关于天猫"},
@@ -121,9 +125,9 @@
 		"copyrightText2":"互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005",
 		"copyrightText3":"浙公网安备 33010002000120号",
 		"copyrightText4":"© 2003-2017 TMALL.COM 版权所有",
-		"img1":"img/footer2-img1.png",
-		"img2":"img/footer2-img2.jpg",
-		"img3":"img/footer2-img3.jpg"
+		"img1":"img/footer/footer2-img1.png",
+		"img2":"img/footer/footer2-img2.jpg",
+		"img3":"img/footer/footer2-img3.jpg"
 
 	},
 
@@ -146,74 +150,135 @@
 	},
 
 	"hotBrand":{
-		"simg1":"img/slive-img1.webp",
-		"simg2":"img/slive-img2.webp",
-		"simg3":"img/hotBrand-img1.webp",
-		"textimg":"img/livetext-img.png",
+		"gimg":"img/hotBrand/slive-img1.webp",
+		"simg":[
+			{"url":"img/hotBrand/slive-img1.webp","liveTmall":"img/hotBrand/liveTmall.png"},
+			{"url":"img/hotBrand/slive-img2.webp","liveTmall":"img/hotBrand/liveTmall.png"},
+			{"url":"img/hotBrand/slive-img3.webp","liveTmall":"img/hotBrand/liveTmall.png"}
+		],
+		"textimg":"img/hotBrand/livetext-img.png",
 		"livetext":"直播品牌边看边买！",
-		"liveTmall":"img/liveTmall.png",
-		"img":"img/hotBrand-img2.webp",
 		"hotBrandImg":[
-			{"url":"img/hotBrand-img2.webp"},
-			{"url":"img/hotBrand-img3.webp"},
-			{"url":"img/hotBrand-img4.webp"},
-			{"url":"img/hotBrand-img5.webp"},
-			{"url":"img/hotBrand-img6.webp"},
-			{"url":"img/hotBrand-img7.webp"},
-			{"url":"img/hotBrand-img8.webp"},
-			{"url":"img/hotBrand-img2.webp"},
-			{"url":"img/hotBrand-img3.webp"},
-			{"url":"img/hotBrand-img4.webp"},
-			{"url":"img/hotBrand-img5.webp"},
-			{"url":"img/hotBrand-img6.webp"},
-			{"url":"img/hotBrand-img7.webp"},
-			{"url":"img/hotBrand-img8.webp"},
-			{"url":"img/hotBrand-img9.webp"},
-			{"url":"img/hotBrand-img10.webp"},
-			{"url":"img/hotBrand-img8.webp"},
-			{"url":"img/hotBrand-img2.webp"},
-			{"url":"img/hotBrand-img3.webp"},
-			{"url":"img/hotBrand-img4.webp"},
-			{"url":"img/hotBrand-img5.webp"},
-			{"url":"img/hotBrand-img6.webp"},
-			{"url":"img/hotBrand-img7.webp"},
-			{"url":"img/hotBrand-img8.webp"}
+			{"url":"img/hotBrand/hotBrand-img2.webp"},
+			{"url":"img/hotBrand/hotBrand-img3.webp"},
+			{"url":"img/hotBrand/hotBrand-img4.webp"},
+			{"url":"img/hotBrand/hotBrand-img5.webp"},
+			{"url":"img/hotBrand/hotBrand-img6.webp"},
+			{"url":"img/hotBrand/hotBrand-img7.webp"},
+			{"url":"img/hotBrand/hotBrand-img8.webp"},
+			{"url":"img/hotBrand/hotBrand-img2.webp"},
+			{"url":"img/hotBrand/hotBrand-img3.webp"},
+			{"url":"img/hotBrand/hotBrand-img4.webp"},
+			{"url":"img/hotBrand/hotBrand-img5.webp"},
+			{"url":"img/hotBrand/hotBrand-img6.webp"},
+			{"url":"img/hotBrand/hotBrand-img7.webp"},
+			{"url":"img/hotBrand/hotBrand-img8.webp"},
+			{"url":"img/hotBrand/hotBrand-img9.webp"},
+			{"url":"img/hotBrand/hotBrand-img10.webp"},
+			{"url":"img/hotBrand/hotBrand-img8.webp"},
+			{"url":"img/hotBrand/hotBrand-img2.webp"},
+			{"url":"img/hotBrand/hotBrand-img3.webp"},
+			{"url":"img/hotBrand/hotBrand-img4.webp"},
+			{"url":"img/hotBrand/hotBrand-img5.webp"},
+			{"url":"img/hotBrand/hotBrand-img6.webp"},
+			{"url":"img/hotBrand/hotBrand-img7.webp"},
+			{"url":"img/hotBrand/hotBrand-img8.webp"}
 
 
 		]
 
 	},
-	"pinkFloor":{
-		"titleLink":[
-			{"linkText":"连衣裙"},
-			{"linkText":"t恤男"},
-			{"linkText":"美容护肤"},
-			{"linkText":"休闲男鞋"},
-			{"linkText":"黄金项链"},
-			{"linkText":"单鞋"},
-			{"linkText":"女包"},
-			{"linkText":"文胸"},
-			{"linkText":"大牌腕表"}
-		],
-		"rightImg":"img/pinkRight-img.jpg",
-		"rightText":"大牌商场同款>",
-		"rightTitle":"聚划算女装会场",
-		"rightSubTitle":"满366减66",
-		"item1":[
-			{"title":"悠享假日时光","text":"健康非海绵聚拢文胸","url":"img/pinkMiddle-img1.jpg"},
-			{"title":"2017春夏造型","text":"短款帅气牛仔夹克","url":"img/pinkMiddle-img2.jpg"},
-			{"title":"真皮斜挎包男包","text":"真皮斜挎包男包单肩包","url":"img/pinkMiddle-img3.jpg"},
-			{"title":"17夏季新款T恤","text":"简约舒适,时尚百搭","url":"img/pinkMiddle-img4.jpg"},
-			{"title":"内衣无痕","text":"安心打底舒适穿着","url":"img/pinkMiddle-img5.jpg"},
-			{"title":"方领男士衬衫","text":"薄款舒适蚕丝质感","url":"img/pinkMiddle-img6.jpg"}
 
-		],
-		"item2":[
-			{"title":"人气高 评价好","text":"青年休闲潮包","url":"img/pinkLeft-img1.jpg"},
-			{"title":"爽夏新品焕新","text":"每周夏装好货焕新","url":"img/pinkLeft-img2.jpg"},
-			{"title":"夏季热销","text":"优质面料","url":"img/pinkLeft-img3.jpg"}
+	"floor":{
 
-		]
-	}
+			"pinkTitleLink":[
+				{"linkText":"连衣裙"},
+				{"linkText":"t恤男"},
+				{"linkText":"美容护肤"},
+				{"linkText":"休闲男鞋"},
+				{"linkText":"黄金项链"},
+				{"linkText":"单鞋"},
+				{"linkText":"女包"},
+				{"linkText":"文胸"},
+				{"linkText":"大牌腕表"}
+			],
+			"pinkRightImg":"img/pink/pinkRight-img.jpg",
+			"pinkRightText":"大牌商场同款>",
+			"pinkRightTitle":"聚划算女装会场",
+			"pinkRightSubTitle":"满366减66",
+			"pinkItem1":[
+				{"title":"悠享假日时光","text":"健康非海绵聚拢文胸","url":"img/pink/pinkMiddle-img1.jpg"},
+				{"title":"2017春夏造型","text":"短款帅气牛仔夹克","url":"img/pink/pinkMiddle-img2.jpg"},
+				{"title":"真皮斜挎包男包","text":"真皮斜挎包男包单肩包","url":"img/pink/pinkMiddle-img3.jpg"},
+				{"title":"17夏季新款T恤","text":"简约舒适,时尚百搭","url":"img/pink/pinkMiddle-img4.jpg"},
+				{"title":"内衣无痕","text":"安心打底舒适穿着","url":"img/pink/pinkMiddle-img5.jpg"},
+				{"title":"方领男士衬衫","text":"薄款舒适蚕丝质感","url":"img/pink/pinkMiddle-img6.jpg"}
 
+			],
+			"pinkItem2":[
+				{"title":"人气高 评价好","text":"青年休闲潮包","url":"img/pink/pinkLeft-img1.jpg"},
+				{"title":"爽夏新品焕新","text":"每周夏装好货焕新","url":"img/pink/pinkLeft-img2.jpg"},
+				{"title":"夏季热销","text":"优质面料","url":"img/pink/pinkLeft-img3.jpg"}
+			],
+
+
+			"blueTitleLink":[
+				{"linkText":"零食"},
+				{"linkText":"牛奶"},
+				{"linkText":"居家饰品"},
+				{"linkText":"保温杯"},
+				{"linkText":"保健品"},
+				{"linkText":"常用药"},
+				{"linkText":"热门图书"},
+				{"linkText":"洗发水"},
+				{"linkText":"家庭清洁"}
+			],
+			"blueRightImg":"img/blue/blueRight-img.jpg",
+			"blueRightText":"预售好货疯狂购>",
+			"blueRightTitle":"1元抢百元券",
+			"blueRightSubTitle":"预售尖货购购购",
+			"blueItem1":[
+				{"title":"膳魔师与你冷暖伴","text":"新品上架 夏季焕新","url":"img/blue/blueMiddle-img1.jpg"},
+				{"title":"入夏清爽茶饮","text":"G20峰会严选品牌","url":"img/blue/blueMiddle-img2.jpg"},
+				{"title":"家纺家饰大牌","text":"健康品质新主张","url":"img/blue/blueMiddle-img3.jpg"},
+				{"title":"哎呦喂无壳南瓜子","text":"颗粒饱满营养丰富","url":"img/blue/blueMiddle-img4.jpg"},
+				{"title":"清香汾酒回味悠长","text":"买汾酒选官方","url":"img/blue/blueMiddle-img5.jpg"},
+				{"title":"炊大皇品牌盛典","text":"品牌厨具汇聚","url":"img/blue/blueMiddle-img6.jpg"}
+
+			],
+			"blueItem2":[
+				{"title":"素家让您爱上洗澡","text":"洗澡怎能没2把刷子","url":"img/blue/blueLeft-img1.jpg"},
+				{"title":"云南白药爱家专场","text":"给家人屯点清新好货","url":"img/blue/blueLeft-img2.jpg"},
+				{"title":"年中大促专区","text":"家居礼品一站式购物","url":"img/blue/blueLeft-img3.jpg"}
+			],
+
+			"greenTitleLink":[
+				{"linkText":"车秒贷"},
+				{"linkText":"皮肤衣"},
+				{"linkText":"运动鞋"},
+				{"linkText":"4s保养"},
+				{"linkText":"行车记录仪"},
+				{"linkText":"轮胎"}
+			],
+			"greenRightImg":"img/green/greenRight-img.jpg",
+			"greenRightText":"明星同款大放送>",
+			"greenRightTitle":"户外狂欢聚先抢",
+			"greenRightSubTitle":"全场49.9元起",
+			"greenItem1":[
+				{"title":"1万开新车","text":"好礼享不停","url":"img/green/greenMiddle-img1.jpg"},
+				{"title":"迪桑特入驻天猫","text":"新店入驻抢开业大礼包","url":"img/green/greenMiddle-img2.jpg"},
+				{"title":"66聚先享","text":"满799减50","url":"img/green/greenMiddle-img3.jpg"},
+				{"title":"智能行车记录仪","text":"黑科技新品首发","url":"img/green/greenMiddle-img4.jpg"},
+				{"title":"保持专注所向披靡","text":"向巴黎著名赛事致敬","url":"img/green/greenMiddle-img5.jpg"},
+				{"title":"66聚划算","text":"抢50元大额优惠券","url":"img/green/greenMiddle-img6.jpg"}
+
+			],
+			"greenItem2":[
+				{"title":"爱车出行","text":"车品优选","url":"img/green/greenLeft-img1.jpg"},
+				{"title":"夏季必备车品","text":"最高享12期免息","url":"img/green/greenLeft-img2.jpg"},
+				{"title":"特步减震女鞋","text":"特步网面跑鞋","url":"img/green/greenLeft-img3.jpg"}
+			]
+
+		}
+		
 }
