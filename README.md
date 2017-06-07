@@ -34,7 +34,7 @@ This is my final project--imitate 'TMall'  webpage.
 ### 前端页面
 HTML CSS JS
 
-Bootstrap JQuery jsrender less
+Bootstrap Flex JQuery jsrender less
 
 ### 数据存储
 JSON
