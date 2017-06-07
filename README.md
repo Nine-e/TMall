@@ -17,10 +17,10 @@ This is my final project--imitate 'TMall'  webpage.
 ## 功能模块
 ### 使用Bootstr、JQuery实现前端页面的交互功能
 #### 1.总导航的背景图片轮播效果
-<img src="img/myTmall-img1.png" style="width:60%">
-<img src="img/myTmall-img2.png" style="width:60%">
+<img src="https://github.com/Nine-e/TMall/tree/master/img/myTmall-img1.png" style="width:60%">
+<img src="https://github.com/Nine-e/TMall/tree/master/img/myTmall-img2.png" style="width:60%">
 #### 2.热门品牌部分，鼠标移动到相应项目上时，产生幕布动画效果
-<img src="img/myTmall-img3.png" style="width:60%">
+<img src="img/myTmall-img3.PNG" style="width:60%">
 #### 3.分类导航部分的图片移动交互
 <img src="img/myTmall-img4.png" style="width:60%">
 #### 4.分类导航部分的附加导航Affix效果
@@ -33,10 +33,10 @@ HTML CSS JS
 
 Bootstrap JQuery jsrender less
 
-###数据存储
+### 数据存储
 JSON
 
-###幻灯片(myslide)
+### 幻灯片(myslide)
 HTML CSS JS
 
 reveal.js MarkDown
