@@ -3,44 +3,43 @@
 @tmallWidth:1230px;
 
 /*通用选择器的样式*/
-.float-left{
+.float-left {
 	float: left;
 }
-.float-right{
+.float-right {
 	float: right;
 }
-.content-center{
+.content-center {
 	width: @tmallWidth;
 	height: 100%;
 	margin: auto;
 }
 
 /*总体框架的样式*/
-body{
+body {
 	background-color:#f5f5f5;
 	padding: 0;
 	margin: 0;
 }
 
 /*顶部导航的样式*/
-nav{
+nav {
 	height: 32px;
 	color: #999;
 	font-size: 10px;
 	font-family: @tmallFont;
 	line-height: 32px;
 	background-color: #f2f2f2;
-	div{
+	div {
 		width: @tmallWidth;
 		margin: auto;
 	}
-	span{
+	span {
 		padding-right: 10px;
 		padding-left: 10px;
-		a{
+		a {
 			color: #999;
-			&:hover 
-			{ 
+			&:hover { 
 				color: #ff0036;
 				text-decoration: none;
 			}
@@ -49,18 +48,18 @@ nav{
 }
 
 /*搜索框部分的样式*/
-.ui-search{
+.ui-search {
 	font-family: arial;
 	text-align: center;
 
-	img{
+	img {
 		float: left;
 		width: 240px;
 		height: 130px;
 		margin: 1px 25px;	
 	}
 	
-	input{
+	input {
 		width: 75%;
 		margin-left: 15px;
 		margin-top: 5px;
@@ -70,22 +69,22 @@ nav{
 	}
 }
 
-.ui-search-content{
+.ui-search-content {
 	height: 130px;
 	text-align: center;
 }
-.ui-search-item{
+.ui-search-item {
 	width: 630px;
 	height: 130px;
 	margin: auto;
 	padding-top: 35px;
 }
-.ui-search-item-top{
+.ui-search-item-top {
 	width: 100%;
 	height: 40px;
 	border: 2px solid @tmallRed;		
 }
-.ui-search-item-button{
+.ui-search-item-button {
 	display: inline-block;
 	float: right;
 	height: 100%;
@@ -97,7 +96,7 @@ nav{
 	line-height: 40px;
 	background-color: @tmallRed;
 }
-.ui-search-item-buttom{
+.ui-search-item-buttom {
 	display: inline-block;
 	float: left;
 	height: 18px;
@@ -107,14 +106,14 @@ nav{
 }
 
 /*页脚一的样式*/
-.ui-footer1{
-    width: 100%;
+.ui-footer1 {
+ width: 100%;
 	text-align: center;
 	font-family: @tmallFont;
 	background-color: #fff;
 	border-top: 1px solid #d1d7dc;
 }
-.ui-footer1-top{
+.ui-footer1-top {
 	text-align: center;
 	padding: 25px 0;
 	img{
@@ -123,7 +122,7 @@ nav{
 		height: 100px;
 	}
 }
-.ui-footer1-buttom{
+.ui-footer1-buttom {
 	/* flex布局 */
 	display: inline-flex;
 	align-items: flex-start;
@@ -133,7 +132,7 @@ nav{
 	padding-top: 22px;
 	border-top: 1px solid #ededed;
 }
-.ui-footer1-buttom-item{
+.ui-footer1-buttom-item {
 	display: inline-block;
 	flex-direction: column;
 	box-sizing: content-box;
@@ -141,14 +140,14 @@ nav{
 	height: 190px;
 	padding-left: 52px;
 	text-align: left;
-	span{
+	span {
 		color: #646464;
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 30px;
 		text-align: left;
 	}
-	a{
+	a {
 		width: 100px;
 		overflow: hidden;
 		text-align: left;
@@ -159,12 +158,12 @@ nav{
 	}
 
 }
-#footer1-img{
+#footer1-img {
 	margin-top: 70px;
 }
 
 /*页脚二的样式*/
-.ui-footer2{
+.ui-footer2 {
 	min-height: 177px;
 	text-align: center;
 	font-family: @tmallFont;
@@ -174,49 +173,49 @@ nav{
 	background-color: #000;
 }
 .ui-footer2-tmallinfo,
-.ui-footer2-otherlink{
+.ui-footer2-otherlink {
 	width: 1190px;
 	margin: auto;
 	padding: 5px 0;
 	color: #fff;
 	line-height: 25px;
 	text-align: left;
-	a{
+	a {
 		margin-right: 3px;
 		color: #fff;
 		cursor: auto;
 	}
 }
-.ui-footer2-copyright{
+.ui-footer2-copyright {
 	.ui-footer2-tmallinfo;
 	padding: 0;
 	height: 110px;
-	a{
+	a {
 		color: #a4a4a4;
 		margin-right: 65px;
 	}
-	span{
+	span {
 		color: #686868;
 		font-weight: 400
 	}
 }
-.ui-footer2-buttom{
+.ui-footer2-buttom {
 	height: 18px;
 	width: 100%;
 }
 
 /*主导航的样式*/
-.ui-mainnav{
+.ui-mainnav {
 	width: 100%;
 }
-.ui-mainnav-bar{
+.ui-mainnav-bar {
 	height:36px;
 	text-align: center;
 	color: #fff;
 	font-family: @tmallFont;
 	background-color: #ff0036;
 }
-.ui-mainnav-bar-item1{
+.ui-mainnav-bar-item1 {
 	float: left;
 	display: inline-block;
 	width: 200px;
@@ -229,13 +228,13 @@ nav{
 	font-family: @tmallFont;
 	font-size: 16px;
 	font-weight: bold;
-	span{
+	span {
 		float: left;
 		margin-left: 5px;
 		line-height: 36px;
 	} 
 }
-.ui-mainnav-bar-item2{
+.ui-mainnav-bar-item2 {
 	display: inline-block;
 	box-sizing: content-box;
 	float: left;
@@ -244,37 +243,34 @@ nav{
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 36px;
-	img{
+	img {
 		width: 90px;
 	    height: 36px;
 	    margin: 0 10px;
 	}
 }
-.ui-mainnav-bar-item3{
+.ui-mainnav-bar-item3 {
 	.ui-mainnav-bar-item2;
 	padding: 0 15px;
 	margin-left: 0;
-	a{ color: #fff;}
+	a { color: #fff;}
 }
-.ui-mainnav-img{
+.ui-mainnav-img {
 	width: 100%;
 	height: 500px;
 }
 .item {
 	text-align: center;
-	img{ margin: auto;}
+	img { margin: auto;}
 }
 
 /*热门品牌部分的样式*/
-.ui-hotBrand{
+.ui-hotBrand {
 	width: 100%;
 	height: 436px;
 	margin-top: 30px;
-	div{
-		
-	}
 }
-.ui-hotBrand-live{
+.ui-hotBrand-live {
 	display: inline-block;
 	float: left;
 	width: 40%;
@@ -282,18 +278,18 @@ nav{
 	padding: 0;
 	background-color: #000;
 }
-.ui-hotBrand-glive{
+.ui-hotBrand-glive {
 	margin: 0;
 	height: 275px;
-	img{
+	img {
 		height: 100%;
 		width: 100%;
 	}
-	div{
+	div {
 		padding: 0;
 	}
 }
-.ui-hotBrand-slive{
+.ui-hotBrand-slive {
 	margin-top: 10px;
 	height: 90px;
 	img{
@@ -301,7 +297,7 @@ nav{
 		width: 100%;
 	}
 }
-.ui-hotBrand-slive-cover{
+.ui-hotBrand-slive-cover {
 	position: absolute;
 	top: 0;
 	left: 15px;
@@ -309,44 +305,44 @@ nav{
 	height: 81px;
 	background-color: rgba(100,100,100,.5);
 	z-index: 10;
-	img{
+	img {
 		width: 46px;
 		height: 40px;
 		margin:20px 50px;
 
 	}
 }
-.ui-hotBrand-livetext{
+.ui-hotBrand-livetext {
 	height: 40px;
 	margin-top: 10px;
 	margin-left: 21px;
-	img{
+	img {
 		height: 31px;
 		width: 81px;
 		margin-top: 9px;
 		margin-right: 9px;
 	}
-	span{color: #fff}
+	span {color: #fff}
 }
-.ui-hotBrand-brand{
+.ui-hotBrand-brand {
 	display: inline-block;
 	width: 60%;
 	height: 100%;
 	padding-left: 15px;
 	background-color: #fff;
 }
-.ui-hotBrand-brand-item{
+.ui-hotBrand-brand-item {
 	background-color: #fff;
 	height: 109px;
 	padding: 0;
 	border-right: #eee solid 1px;
 	border-bottom: #eee solid 1px;
-	img{
+	img {
 		margin-top:29px;
 		margin-left: 13px;
 	}
 }
-.ui-hotBrand-brand-item-cover{
+.ui-hotBrand-brand-item-cover {
 	position: absolute;
 	top: 0;
 	width: 124.5px;
@@ -355,7 +351,7 @@ nav{
 	transition: all .3s ease-out;
 	z-index: 10;
 	text-align: center;
-	span{
+	span {
 		display: block;
 		color: #fff;
 		height: 60px;
@@ -364,7 +360,7 @@ nav{
 		font-family: @tmallFont;
 		font-size: 12px;
 	}
-	a{
+	a {
 		display: inline-block;
 		color: #fff;
 		width: 63px;
@@ -379,35 +375,35 @@ nav{
 }
 
 /*分区推荐部分的样式*/
-.ui-floor{
+.ui-floor {
 	height: 470px;
 	width:100%;
 	margin-top: 30px;
 	text-align: center;
 
 }
-.ui-color-mark{
+.ui-color-mark {
 	display: inline-block;
 	width: 5px;
 	height: 20px;
 	vertical-align: top;
 }
-.ui-floor-title{
+.ui-floor-title {
 	height: 20px;
 	width: 100%;
-	i{
+	i {
 		background-color: #ea5f8d;
 	}
 	
 }
-.ui-floor-title-left{
+.ui-floor-title-left {
 	float: left;
 	text-align: left;
 }
-.ui-floor-title-right{
+.ui-floor-title-right {
 	float: right;
 	text-align: left;
-	a{
+	a {
 		display: inline-block;
 		height: 20px;
 		line-height: 20px;
@@ -416,7 +412,7 @@ nav{
 		color: #000;
 	}
 }
-.ui-floor-name{
+.ui-floor-name {
 	display: inline-block;
 	vertical-align: top;
 	font-family: @tmallFont;
@@ -425,7 +421,7 @@ nav{
 	line-height: 18px;
 	margin-left: 10px;
 }
-.ui-floor-sub-name{
+.ui-floor-sub-name {
 	display: inline-block;
 	vertical-align: top;
 	font-family: @tmallFont;
@@ -434,31 +430,31 @@ nav{
 	line-height: 24px;
 	margin-left: 10px;
 }
-.ui-floor-body{
+.ui-floor-body {
 	height: 440px;
 	width: 100%;
 	margin-top: 10px;
 }
-.ui-title-con{
+.ui-title-con {
 	width: 100%;
 	height: 110px;
 	color: #fff;
 }
-.ui-floor-body-right{
+.ui-floor-body-right {
 	display: inline-flex;
 	width: 20%;
 	height: 100%;
 	float: left;
 	flex-direction: column;
-	img{
+	img {
 		width: 100%;
 		height: 330px;
 	}
-	.ui-title-con{
+	.ui-title-con {
 		background-color: #ea5f8d;
 	}
 }
-.ui-act-title-ctn{
+.ui-act-title-ctn {
 	width: 100%;
 	height: 30px;
 	background-color: rgba(255,255,255,.8);
@@ -468,13 +464,13 @@ nav{
 	line-height: 30px;
 	margin-top: -30px;
 }
-.ui-floor-body-middle{
+.ui-floor-body-middle {
 	display: inline-block;
 	width: 60%;
 	height: 100%;
 	float: left;
 }
-.ui-floor-middle-item{
+.ui-floor-middle-item {
 	display: inline-block;
 	width: 33.3%;
 	height: 220px;
@@ -484,11 +480,11 @@ nav{
 	border-bottom: 1px solid #f5f5f5;
 	float: left;
 	text-align: left;
-	h5{ 
+	h5 { 
 		color: #ea5f8d;
 		margin-bottom: 2px;
 	  }
-	img{
+	img {
 		width: 154px;
 		height: 154px;
 		float: right;
@@ -496,14 +492,14 @@ nav{
 	}
 }
 
-.ui-floor-body-left{
+.ui-floor-body-left {
 	display: inline-block;
 	width: 20%;
 	height: 100%;
 	float: left;
 	margin-left: -1px;
 }
-.ui-floor-left-item{
+.ui-floor-left-item {
 	display: inline-block;
 	width: 100%;
 	height: 147px;
@@ -513,11 +509,11 @@ nav{
 	border-bottom: 1px solid #f5f5f5;
 	float: left;
 	text-align: left;
-	h5{ 
+	h5 { 
 		color: #ea5f8d;
 		margin-bottom: 2px;
 	  }
-	img{
+	img {
 		width: 100px;
 		height: 100px;
 		float: right;
@@ -525,106 +521,95 @@ nav{
 		transition: all .3s ease-out;
 	}
 }
-#section-2{
-	i{
+#section-2 {
+	i {
 		background-color: #0AA6E8;
 	}
-	.ui-title-con{
+	.ui-title-con {
 		background-color: #0AA6E8;
 	}
-	h5{
+	h5 {
 		color: #0AA6E8;
 	}
 }
-#section-3{
+#section-3 {
 	i{
 		background-color: #64c333;
 	}
-	.ui-title-con{
+	.ui-title-con {
 		background-color: #64c333;
 	}
-	h5{
+	h5 {
 		color: #64c333;
 	}
 }
-.ui-floor-end{
+.ui-floor-end {
 	width: 100%;
 	text-align: center;
-	img{
+	img {
 		margin: auto;
 	}
 }
 
 /* Custom Styles */
-#myScrollspy{
+#myScrollspy {
 	display: inline-block;
 	float: right;
 	width: 20px;
 	font-size: 14px;
 	line-height: 36px;
 }
-    ul.nav-tabs{
-        width: 20px;
-        margin-top:20px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
-    }
-    ul.nav-tabs li{
-    	height: 100px;
-        margin: 0;
-        padding: 2px;
-        background-color: #666;
-        border-top: 1px solid white;
-        text-align: center;
-    }
-    ul.nav-tabs li:first-child{
-        border-top: none;
-        background-color: red;
-        padding-top: 10px;
-    }
-    ul.nav-tabs li a{
-    	color: #fff;
-        margin: 0;
-        padding: 0;
-        border: none;
-    }
-   /* ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
-        background: #0088cc;
-        color: #fff;
-        border: none;
-    }*/
-    /*ul.nav-tabs li:first-child a{
-        
-    }
-    ul.nav-tabs li:last-child a{
-        
-    }*/
-    ul.nav-tabs.affix{
-        top: 40px; /* Set the top position of pinned element */
-    }
-    ul.nav-tabs li:nth-child(2).active {
-    	background-color:  #ea5f8d;
-    	a{
-    		background-color:  #ea5f8d;
-    		border: none;
-    	}
-    }
-    ul.nav-tabs li:nth-child(3).active {
-    	background-color: #0AA6E8;
-    	a{
-    		background-color: #0AA6E8;
-    		border: none;
-    	}
-    }
-    ul.nav-tabs li:nth-child(4).active {
-    	background-color: #64c333;
-    	a{
-    		background-color: #64c333;
-    		border: none;
-    	}
-    }
-    ul.nav-tabs li:nth-child(2){
-    	a:hover{
-    		background-color:  #ea5f8d;
-    		border: none;
-    	}
-    }
+ul.nav-tabs {
+	width: 20px;
+ margin-top:20px;
+ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+ul.nav-tabs li {
+	height: 100px;
+	margin: 0;
+	padding: 2px;
+ background-color: #666;
+ border-top: 1px solid white;
+ text-align: center;
+}
+ul.nav-tabs li:first-child {
+ border-top: none;
+ background-color: red;
+ padding-top: 10px;
+}
+ul.nav-tabs li a {
+ color: #fff;
+ margin: 0;
+ padding: 0;
+ border: none;
+}
+ul.nav-tabs.affix {
+ top: 40px; /* Set the top position of pinned element */
+ }
+ul.nav-tabs li:nth-child(2).active {
+	background-color:  #ea5f8d;
+ a{
+ 	background-color:  #ea5f8d;
+  border: none;
+ }
+}
+ul.nav-tabs li:nth-child(3).active {
+	background-color: #0AA6E8;
+ a {
+ 	background-color: #0AA6E8;
+  border: none;
+ }
+}
+ul.nav-tabs li:nth-child(4).active {
+	background-color: #64c333;
+	a {
+		background-color: #64c333;
+		border: none;
+	}
+}
+ul.nav-tabs li:nth-child(2){
+	a:hover {
+		background-color:  #ea5f8d;
+		border: none;
+	}
+}
